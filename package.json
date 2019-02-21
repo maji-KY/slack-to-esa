@@ -1,0 +1,41 @@
+{
+  "name": "slack-to-esa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development webpack --watch",
+    "lint": "eslint --ext .js,.ts,.tsx src/main webpack.config.js karma.conf.js",
+    "test": "NODE_ENV=development karma start karma.conf.js",
+    "test-watch": "karma start karma.conf.js --no-single-run",
+    "build-dev": "NODE_ENV=development webpack",
+    "build": "NODE_ENV=production webpack"
+  },
+  "repository": "https://github.com/maji-KY/slack-to-esa.git",
+  "author": "maji-KY <maji-ky@neco-labo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "decode-html": "^2.0.0",
+    "hubot": "^3.3.0",
+    "hubot-slack": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/hubot": "^2.19.3",
+    "@types/jasmine": "^3.3.5",
+    "@types/node": "^10.12.26",
+    "@typescript-eslint/parser": "^1.4.0",
+    "clean-webpack-plugin": "^1.0.0",
+    "eslint": "^5.11.0",
+    "jasmine-core": "^3.3.0",
+    "karma": "^3.1.4",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-webpack": "^3.0.5",
+    "ts-loader": "^5.3.2",
+    "typescript": "^3.3.3",
+    "uglifyjs-webpack-plugin": "^2.1.0",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.7.2"
+  }
+}

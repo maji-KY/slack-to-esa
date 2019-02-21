@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "noUnusedLocals" : true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "alwaysStrict": true,
+    "noUnusedParameters": false,
+    "downlevelIteration": true,
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "lib": ["dom", "es5"],
+    "module": "commonjs",
+    "target": "es5",
+    "esModuleInterop": true,
+    "jsx": "react"
+  },
+  "exclude": [
+    "node_modules",
+    "functions"
+  ]
+}
